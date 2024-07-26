@@ -291,3 +291,13 @@ samples/client/petstore/ocaml/_build/
 
 # jetbrain http client
 samples/client/jetbrains/adyen/checkout71/http/client/Apis/http-client.private.env.json
+samples/client/petstore/swift5/anycodableLibrary/Package.resolved
+samples/openapi3/server/petstore/go/go-petstore/go.sum
+samples/client/petstore/swift5/anycodableLibrary/Package.resolved
+samples/client/petstore/swift5/anycodableLibrary/Package.resolved
+samples/server/others/go-server/no-body-path-params/go.sum
+samples/server/petstore/go-api-server/go.sum
+samples/server/petstore/go-chi-server/go.sum
+samples/server/petstore/go-echo-server/go.sum
+samples/server/petstore/go-gin-api-server-interface-only/go.sum
+samples/server/petstore/go-server-required/go.sum

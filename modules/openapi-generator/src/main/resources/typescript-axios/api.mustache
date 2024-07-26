@@ -3,8 +3,17 @@
 {{>licenseInfo}}
 
 {{^withSeparateModelsAndApi}}
+// @ts-ignore
 import type { Configuration } from './configuration';
-import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+
+import type {
+// @ts-ignore
+AxiosPromise,
+// @ts-ignore
+AxiosInstance,
+// @ts-ignore
+RawAxiosRequestConfig } from 'axios';
+// @ts-ignore
 import globalAxios from 'axios';
 {{#withNodeImports}}
 // URLSearchParams not necessarily used
@@ -16,10 +25,35 @@ import FormData from 'form-data'
 {{/withNodeImports}}
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from './common';
+import {
+
+  DUMMY_BASE_URL,
+  assertParamExists,
+  // @ts-ignore
+  setApiKeyToObject,
+  // @ts-ignore
+  setBasicAuthToObject,
+  // @ts-ignore
+  setBearerAuthToObject,
+  // @ts-ignore
+  setOAuthToObject,
+  setSearchParams,
+  serializeDataIfNeeded,
+  toPathString,
+  createRequestFunction
+  } from './common';
+  // @ts-ignore
 import type { RequestArgs } from './base';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, BaseAPI, RequiredError, operationServerMap } from './base';
+import {
+BASE_PATH,
+// @ts-ignore
+COLLECTION_FORMATS,
+BaseAPI,
+// @ts-ignore
+RequiredError,
+operationServerMap
+} from './base';
 
 {{#models}}
 {{#model}}{{#isEnum}}{{>modelEnum}}{{/isEnum}}{{#oneOf}}{{#-first}}{{>modelOneOf}}{{/-first}}{{/oneOf}}{{^isEnum}}{{^oneOf}}{{>modelGeneric}}{{/oneOf}}{{/isEnum}}{{/model}}
