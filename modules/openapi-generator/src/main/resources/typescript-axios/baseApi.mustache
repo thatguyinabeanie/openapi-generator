@@ -7,8 +7,8 @@ import type { Configuration } from './configuration';
 // @ts-ignore
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
-
-export const BASE_PATH = "{{{basePath}}}".replace(/\/+$/, "");
+import { API_BASE_URL } from './configuration';
+export const BASE_PATH = API_BASE_URL.replace(/\/+$/, "");
 
 /**
  *
